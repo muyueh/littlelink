@@ -23,9 +23,10 @@ button {
   text-decoration: none;
   line-height: 16px;
   height: 64px;
-  width: 522px;
+  width: 100%;
+  max-width: 520px;
   box-sizing: border-box;
-  grid-template-columns: 522px;
+  grid-template-columns: 1fr;
   grid-template-rows: 64px 0px;
   gap: normal;
   transition: filter 0.2s ease, transform 0.2s ease;
