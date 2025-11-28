@@ -8,11 +8,31 @@
 /* Brand Button Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Only include brand-specific button styling here */
-.button,button {
-  color:var(--button-text,#000000);
-  background-color:var(--button-background,transparent);
-	border:var(--button-border,none);
-	transition:filter 0.2s ease,transform 0.2s ease;
+.button,
+button {
+  display: grid;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 0px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  line-height: 16px;
+  height: 64px;
+  width: 100%;
+  max-width: 520px;
+  box-sizing: border-box;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px 0px;
+  gap: normal;
+  transition: filter 0.2s ease, transform 0.2s ease;
+  color: var(--button-text, rgb(255, 255, 255));
+  background-color: var(--button-background, rgba(0, 0, 0, 0));
+  border: var(--button-border, 0px solid rgb(255, 255, 255));
 }
 
 /* Global Button Hover Effect
